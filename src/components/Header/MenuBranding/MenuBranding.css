@@ -1,0 +1,20 @@
+.MenuBranding {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: #444;
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	justify-content: center;
+	width: 50%;
+	height: 100%;
+	overflow: hidden;
+	opacity: 0.9;
+	transform: translateY(100%);
+	transition: all 0.5s ease-out;
+}
+
+.Show {
+	transform: translateY(0);
+}

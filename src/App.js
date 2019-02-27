@@ -1,28 +1,49 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { Route, Switch } from 'react-router-dom'
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+import './App.css'
+import Header from './components/Header/Header'
+import LandingPage from './components/MainSite/LandingPage/LandingPage'
+import AboutMe from './components/MainSite/About/About'
+import MyWork from './components/MainSite/MyWork/MyWork'
+import ContactPage from './components/MainSite/ContactPage/ContactPage'
+
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+
+library.add(fab)
+
+class App extends React.Component {
+	state = {
+		showMenu: false,
+		showOpaqueBackground: true
+	}
+	sidebarToggleHandler = () => {
+		this.setState(prevState => {
+			return { showMenu: !prevState.showMenu }
+		})
+	}
+
+	closeMenuHandler = () => {
+		this.setState({ showMenu: false })
+	}
+	render() {
+		return (
+			<div>
+				<Header
+					toggleSidebar={this.sidebarToggleHandler}
+					sideVisible={this.state.showMenu}
+					close={this.closeMenuHandler}
+				/>
+				<Switch>
+					<Route path='/' exact component={LandingPage} />
+					<Route path='/about' exact component={AboutMe} />
+					<Route path='/work' exact component={MyWork} />
+					<Route path='/contact' exact component={ContactPage} />
+				</Switch>
+			</div>
+		)
+	}
 }
 
-export default App;
+export default App

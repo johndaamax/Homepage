@@ -1,0 +1,34 @@
+h1,
+h2,
+h3 {
+	margin: 0;
+	font-weight: 400;
+	color: #fff;
+}
+
+.AboutInfo {
+	display: grid;
+	grid-gap: 30px;
+	grid-template-areas: 'bioimage bio bio' 'job1 job1 null';
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.Bio {
+	grid-area: bio;
+	font-size: 1.5rem;
+}
+
+.BioImage {
+	grid-area: bioimage;
+	margin: auto;
+}
+.Job1 {
+	grid-area: job1;
+	color: #fff;
+}
+
+.Job {
+	background: #515151;
+	padding: 0.5rem;
+	border-bottom: #eece1a 5px solid;
+}

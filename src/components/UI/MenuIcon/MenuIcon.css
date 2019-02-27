@@ -1,0 +1,34 @@
+.MenuIcon {
+	position: absolute;
+	z-index: 3;
+	right: 35px;
+	top: 25px;
+	cursor: pointer;
+}
+
+.Bar1,
+.Bar2,
+.Bar3 {
+	width: 35px;
+	height: 3px;
+	background-color: #fff;
+	margin: 6px 0;
+	transition: 0.4s;
+	z-index: 300;
+	border-radius: 2px;
+}
+
+/* Rotate first bar */
+.Change .Bar1 {
+	transform: rotate(45deg) translate(7px, 7px);
+}
+
+/* Fade out the second bar */
+.Change .Bar2 {
+	opacity: 0;
+}
+
+/* Rotate last bar */
+.Change .Bar3 {
+	transform: rotate(-45deg) translate(6px, -6px);
+}

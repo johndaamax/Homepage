@@ -1,0 +1,31 @@
+.BtnDark {
+	background: black;
+	color: #fff;
+	display: block;
+	padding: 0.5rem 1rem;
+	border: 0;
+	margin-bottom: 0.3rem;
+	text-decoration: none;
+}
+
+.BtnDark:hover {
+	background: #eece1a;
+	color: #000;
+}
+
+.Description {
+	padding: 10px 10px;
+	max-height: 120px;
+	overflow: auto;
+	background: #fff;
+	border: 1px solid #eece1a;
+	border-radius: 5px;
+}
+
+.Title {
+	color: #fff;
+	font-size: 24px;
+	text-align: center;
+	text-transform: uppercase;
+	margin: auto;
+}

@@ -1,0 +1,71 @@
+.SideNav {
+	background: #373737;
+	position: fixed;
+	width: 50%;
+	max-width: 50%;
+	height: 100%;
+	right: 0;
+	top: 0;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	transform: translateY(-100%);
+	opacity: 0.9;
+	box-sizing: border-box;
+	transition: transform 0.4s linear;
+}
+
+.Show {
+	transform: translateY(0);
+}
+
+.NavItem {
+	transform: translate3d(600px, 0, 0);
+	transition: all 0.5s ease-out;
+}
+
+.NavItemShow {
+	transform: translate3d(0, 0, 0);
+}
+
+.NavItem:nth-child(1) {
+	transition-delay: 0.1s;
+}
+
+.NavItem:nth-child(2) {
+	transition-delay: 0.2s;
+}
+
+.NavItem:nth-child(3) {
+	transition-delay: 0.3s;
+}
+
+.NavItem:nth-child(4) {
+	transition-delay: 0.4s;
+}
+
+.NavLink {
+	display: inline-block;
+	position: relative;
+	font-size: 30px;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 1rem 0;
+	font-weight: 300;
+	color: #fff;
+}
+
+.NavLink:hover {
+	transition: color 0.3s ease-out;
+	color: rgb(219, 7, 7);
+}
+
+.active {
+	border: 1px seagreen dashed;
+	background: #fff;
+}

@@ -1,0 +1,10 @@
+.Popup {
+	position: absolute;
+	z-index: 1000;
+	background-color: #000;
+	border: 2px solid silver;
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+	transition: all 0.3s ease-out;
+}
