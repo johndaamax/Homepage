@@ -11,7 +11,7 @@ const project = props => {
 			<img src={props.imgSrc} alt='Project' onClick={props.showPopup} />
 
 			<a href={props.link} className={classes.BtnDark}>
-				<FontAwesomeIcon icon='github' />
+				<FontAwesomeIcon icon={['fab', 'github']} /> Github
 			</a>
 		</div>
 	)

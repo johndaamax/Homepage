@@ -2,7 +2,7 @@ import React from 'react'
 
 import classes from './MyWork.css'
 import CustomHeading from '../../UI/CustomHeading/CustomHeading'
-import Project from '../../Project/Project'
+import Project from '../MyWork/Project/Project'
 import Popup from '../../UI/Popup/Popup'
 import { projects as ProjectData } from './projects'
 
@@ -35,7 +35,7 @@ class myWork extends React.Component {
 		))
 
 		return (
-			<main>
+			<main className={classes.MyWork}>
 				<Popup
 					show={this.state.showPopup}
 					closePopup={this.closePopupHandler}

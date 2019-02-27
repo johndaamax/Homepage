@@ -6,7 +6,7 @@ import Portrait from '../../UI/Portrait/Portrait'
 
 const aboutMe = () => {
 	return (
-		<main id='about'>
+		<main className={classes.About}>
 			<CustomHeading
 				mainHeading='About '
 				secondaryHeading='Me'

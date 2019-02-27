@@ -1,6 +1,6 @@
-import p1 from '../../../img/projects/discord_bot.jpg'
-import p2 from '../../../img/projects/rgbgame.png'
-import p3 from '../../../img/projects/refactoring.png'
+import p1 from '../../../assets/images/projects/discord_bot.jpg'
+import p2 from '../../../assets/images/projects/rgbgame.png'
+import p3 from '../../../assets/images/projects/refactoring.png'
 
 export const projects = [
 	{
@@ -15,7 +15,7 @@ export const projects = [
 		id: 2,
 		title: 'Color Game',
 		description:
-			'A simple color guessing game made with pure HTML, CSS and JS. Original idea is from the Web Developer Bootcamp course by Colt Steele.',
+			'A simple color guessing game made with pure HTML, CSS and JS. Original idea is from the Web Developer Bootcamp course by Colt Steele, enhanced to be more dynamic. Now includes max attempts and score.',
 		image: p2,
 		link: 'https://github.com/johndaamax/Simple-Color-Game'
 	},

@@ -2,9 +2,13 @@
 	box-sizing: border-box;
 }
 
+html,
 body {
-	background: url(./assets/images/background.jpg);
 	height: 100%;
+}
+
+body {
+	background: url(./assets/images/testsdgsdg.jpg);
 	margin: 0;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	line-height: 1.5;
@@ -18,7 +22,11 @@ body:after {
 	top: 0;
 	right: 0;
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 	z-index: -1;
 	background: rgba(40, 40, 40, 0.95);
+}
+
+main {
+	padding: 3rem;
 }

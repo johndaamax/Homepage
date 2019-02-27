@@ -25,3 +25,20 @@
 .Text {
 	color: #eece1a;
 }
+
+@media screen and (max-width: 750px) {
+	.ContactPage {
+		width: 100vw;
+		height: 100vh;
+		background: #454545;
+		transition: all 0.8s ease-out;
+	}
+
+	.Box div {
+		font-size: 1.2rem;
+		border: 2px #fff solid;
+		padding: 1rem 2rem;
+		margin-bottom: 3rem;
+		transition: all 0.5s ease-out;
+	}
+}

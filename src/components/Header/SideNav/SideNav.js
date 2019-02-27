@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import classes from './SideNav.css'
 
 const sideNav = props => {
@@ -13,56 +13,24 @@ const sideNav = props => {
 	return (
 		<ul className={attachedClasses.join(' ')}>
 			<li className={navItemClasses.join(' ')}>
-				<NavLink
-					exact
-					onClick={props.close}
-					to='/'
-					activeStyle={{
-						fontWeight: 'bold',
-						color: 'red'
-					}}
-					className={classes.NavLink}>
+				<Link onClick={props.close} to='/' className={classes.NavLink}>
 					Home
-				</NavLink>
+				</Link>
 			</li>
 			<li className={navItemClasses.join(' ')}>
-				<NavLink
-					exact
-					onClick={props.close}
-					to='/about'
-					activeStyle={{
-						fontWeight: 'bold',
-						color: 'red'
-					}}
-					className={classes.NavLink}>
+				<Link onClick={props.close} to='/about' className={classes.NavLink}>
 					About me
-				</NavLink>
+				</Link>
 			</li>
 			<li className={navItemClasses.join(' ')}>
-				<NavLink
-					exact
-					onClick={props.close}
-					to='/work'
-					activeStyle={{
-						fontWeight: 'bold',
-						color: 'red'
-					}}
-					className={classes.NavLink}>
+				<Link onClick={props.close} to='/work' className={classes.NavLink}>
 					My Work
-				</NavLink>
+				</Link>
 			</li>
 			<li className={navItemClasses.join(' ')}>
-				<NavLink
-					exact
-					onClick={props.close}
-					to='/contact'
-					activeStyle={{
-						fontWeight: 'bold',
-						color: 'red'
-					}}
-					className={classes.NavLink}>
+				<Link onClick={props.close} to='/contact' className={classes.NavLink}>
 					Contact Me
-				</NavLink>
+				</Link>
 			</li>
 		</ul>
 	)

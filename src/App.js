@@ -7,6 +7,7 @@ import LandingPage from './components/MainSite/LandingPage/LandingPage'
 import AboutMe from './components/MainSite/About/About'
 import MyWork from './components/MainSite/MyWork/MyWork'
 import ContactPage from './components/MainSite/ContactPage/ContactPage'
+import Footer from './components/Footer/Footer'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
@@ -41,6 +42,7 @@ class App extends React.Component {
 					<Route path='/work' exact component={MyWork} />
 					<Route path='/contact' exact component={ContactPage} />
 				</Switch>
+				<Footer />
 			</div>
 		)
 	}

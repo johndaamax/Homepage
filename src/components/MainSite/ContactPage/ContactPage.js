@@ -4,7 +4,7 @@ import classes from './ContactPage.css'
 import CustomHeading from '../../UI/CustomHeading/CustomHeading'
 
 const contactPage = props => (
-	<main>
+	<main className={classes.ContactPage}>
 		<CustomHeading
 			mainHeading='Contact '
 			secondaryHeading='Me'

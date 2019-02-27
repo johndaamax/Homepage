@@ -15,7 +15,8 @@ h3 {
 
 .Bio {
 	grid-area: bio;
-	font-size: 1.5rem;
+	min-width: 350px;
+	font-size: 1.3rem;
 }
 
 .BioImage {
@@ -24,6 +25,7 @@ h3 {
 }
 .Job1 {
 	grid-area: job1;
+	min-width: 350px;
 	color: #fff;
 }
 
@@ -31,4 +33,27 @@ h3 {
 	background: #515151;
 	padding: 0.5rem;
 	border-bottom: #eece1a 5px solid;
+}
+
+@media screen and (max-width: 750px) {
+	.AboutInfo {
+		transition: all 0.8s ease-out;
+		grid-template-areas: 'bioimage' 'bio' 'job1';
+		grid-template-columns: 1fr;
+	}
+
+	.About {
+		background: #454545;
+		transition: all 0.8s ease-out;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.About {
+		padding: 0.5rem;
+		transition: all 0.8s ease-out;
+	}
+	.BioImage {
+		margin: 0 auto;
+	}
 }

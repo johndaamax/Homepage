@@ -1,0 +1,34 @@
+.Footer {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	height: 60px;
+	background: #232323;
+	color: white;
+	text-align: center;
+	font-size: 24px;
+}
+
+.Footer p {
+	margin: 8px auto;
+}
+
+.Footer p span {
+	font-size: 28px;
+}
+
+.Icon {
+	margin-left: 10px;
+	color: rgb(50, 173, 245);
+}
+
+@media screen and (max-width: 360px) {
+	.Footer {
+		height: 90px;
+		transition: all 0.5s ease-out;
+	}
+
+	.Footer p {
+		margin: 4px auto;
+	}
+}

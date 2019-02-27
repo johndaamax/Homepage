@@ -2,7 +2,7 @@
 	position: absolute;
 	z-index: 3;
 	right: 35px;
-	top: 25px;
+	top: 12px;
 	cursor: pointer;
 }
 
@@ -14,7 +14,7 @@
 	background-color: #fff;
 	margin: 6px 0;
 	transition: 0.4s;
-	z-index: 300;
+	z-index: 10;
 	border-radius: 2px;
 }
 

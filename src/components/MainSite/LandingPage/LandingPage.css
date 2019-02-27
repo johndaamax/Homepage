@@ -1,9 +1,4 @@
-main {
-	padding: 4rem;
-	min-height: calc(100vh - 60px);
-}
-
-.Home {
+.LandingPage {
 	overflow: hidden;
 }
 
@@ -15,42 +10,41 @@ h3 {
 	color: #fff;
 }
 
-.LgHeading {
-	font-size: 5rem;
-	padding: 1rem;
-	margin-top: 25vh;
-}
-
-.SmHeading {
+.Welcome {
+	min-width: 300px;
+	border-radius: 5px;
 	margin-bottom: 2rem;
 	padding: 0.2rem 1rem;
 	background: rgba(73, 73, 73, 0.5);
 }
 
-.SecondaryName {
-	color: rgb(0, 255, 255);
+.Icons {
+	min-width: 250px;
 }
 
 .Icons a {
 	color: #fff;
 	padding: 0;
-	margin-left: 20px;
+	margin-left: 30px;
 	font-size: 1.3rem;
 }
 
-.twitter i:hover {
-	color: #1da1f2;
-	transition: all 0.7s linear;
-}
-.facebook i:hover {
+.facebook:hover {
 	color: #4267b2;
 	transition: all 0.7s linear;
 }
-.linkedin i:hover {
+.linkedin:hover {
 	color: #0077b5;
 	transition: all 0.7s linear;
 }
-.github i:hover {
+.github:hover {
 	color: rgb(78, 241, 56);
 	transition: all 0.7s linear;
+}
+
+@media screen and (max-width: 450px) {
+	.LandingPage {
+		transition: all 0.8s ease-out;
+		padding: 1.5rem;
+	}
 }
