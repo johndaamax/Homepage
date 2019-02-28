@@ -13,7 +13,7 @@ h3 {
 .AboutInfo {
 	display: grid;
 	grid-gap: 30px;
-	grid-template-areas: 'bioimage bio bio' 'job1 job1 null';
+	grid-template-areas: 'bioimage bio bio' 'job1 null null';
 	grid-template-columns: repeat(3, 1fr);
 	padding-bottom: 50px;
 }

@@ -7,7 +7,6 @@ import LandingPage from './components/MainSite/LandingPage/LandingPage'
 import AboutMe from './components/MainSite/About/About'
 import MyWork from './components/MainSite/MyWork/MyWork'
 import ContactPage from './components/MainSite/ContactPage/ContactPage'
-import Footer from './components/Footer/Footer'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
@@ -16,9 +15,9 @@ library.add(fab)
 
 class App extends React.Component {
 	state = {
-		showMenu: false,
-		showOpaqueBackground: true
+		showMenu: false
 	}
+
 	sidebarToggleHandler = () => {
 		this.setState(prevState => {
 			return { showMenu: !prevState.showMenu }
@@ -28,6 +27,7 @@ class App extends React.Component {
 	closeMenuHandler = () => {
 		this.setState({ showMenu: false })
 	}
+
 	render() {
 		return (
 			<div>
@@ -42,7 +42,6 @@ class App extends React.Component {
 					<Route path='/work' exact component={MyWork} />
 					<Route path='/contact' exact component={ContactPage} />
 				</Switch>
-				{/* <Footer /> */}
 			</div>
 		)
 	}
