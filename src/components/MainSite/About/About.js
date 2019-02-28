@@ -3,6 +3,7 @@ import React from 'react'
 import classes from './About.css'
 import CustomHeading from '../../UI/CustomHeading/CustomHeading'
 import Portrait from '../../UI/Portrait/Portrait'
+import Footer from '../../Footer/Footer'
 
 const aboutMe = () => {
 	return (
@@ -38,6 +39,7 @@ const aboutMe = () => {
 					</p>
 				</div>
 			</div>
+			<Footer />
 		</main>
 	)
 }

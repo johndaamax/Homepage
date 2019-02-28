@@ -1,3 +1,8 @@
+.ContactPage {
+	min-width: 350px;
+	height: 100%;
+}
+
 .Box {
 	display: flex;
 	flex-wrap: wrap;
@@ -32,6 +37,7 @@
 		height: 100vh;
 		background: #454545;
 		transition: all 0.8s ease-out;
+		padding: 2rem;
 	}
 
 	.Box div {
@@ -39,6 +45,20 @@
 		border: 2px #fff solid;
 		padding: 1rem 2rem;
 		margin-bottom: 3rem;
+		transition: all 0.5s ease-out;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.ContactPage {
+		padding: 1rem;
+	}
+
+	.Box div {
+		font-size: 1rem;
+		border: 2px #fff solid;
+		padding: 0.7rem 1.5rem;
+		margin-bottom: 1.5rem;
 		transition: all 0.5s ease-out;
 	}
 }

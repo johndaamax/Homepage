@@ -2,6 +2,7 @@ import React from 'react'
 import classes from './LandingPage.css'
 import CustomHeading from '../../UI/CustomHeading/CustomHeading'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Footer from '../../Footer/Footer'
 
 const landingPage = () => {
 	return (
@@ -47,6 +48,7 @@ const landingPage = () => {
 					/>
 				</a>
 			</div>
+			<Footer />
 		</main>
 	)
 }

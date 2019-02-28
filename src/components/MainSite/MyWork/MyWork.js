@@ -5,6 +5,7 @@ import CustomHeading from '../../UI/CustomHeading/CustomHeading'
 import Project from '../MyWork/Project/Project'
 import Popup from '../../UI/Popup/Popup'
 import { projects as ProjectData } from './projects'
+import Footer from '../../Footer/Footer'
 
 class myWork extends React.Component {
 	state = {
@@ -47,6 +48,7 @@ class myWork extends React.Component {
 					caption='Check out some of my projects...'
 				/>
 				<div className={classes.Projects}>{projects}</div>
+				<Footer />
 			</main>
 		)
 	}

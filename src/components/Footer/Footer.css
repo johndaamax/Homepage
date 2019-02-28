@@ -1,15 +1,16 @@
 .Footer {
-	position: absolute;
+	position: fixed;
 	width: 100%;
+	left: 0;
 	bottom: 0;
 	height: 60px;
 	background: #232323;
 	color: white;
 	text-align: center;
-	font-size: 24px;
 }
 
 .Footer p {
+	font-size: 24px;
 	margin: 8px auto;
 }
 
@@ -22,13 +23,17 @@
 	color: rgb(50, 173, 245);
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 450px) {
 	.Footer {
-		height: 90px;
+		height: 50px;
 		transition: all 0.5s ease-out;
 	}
 
 	.Footer p {
-		margin: 4px auto;
+		font-size: 16px;
+	}
+
+	.Footer p span {
+		font-size: 18px;
 	}
 }

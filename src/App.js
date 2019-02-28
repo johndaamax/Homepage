@@ -42,7 +42,7 @@ class App extends React.Component {
 					<Route path='/work' exact component={MyWork} />
 					<Route path='/contact' exact component={ContactPage} />
 				</Switch>
-				<Footer />
+				{/* <Footer /> */}
 			</div>
 		)
 	}

@@ -2,6 +2,7 @@ import React from 'react'
 
 import classes from './ContactPage.css'
 import CustomHeading from '../../UI/CustomHeading/CustomHeading'
+import Footer from '../../Footer/Footer'
 
 const contactPage = props => (
 	<main className={classes.ContactPage}>
@@ -21,6 +22,7 @@ const contactPage = props => (
 				<span className={classes.Text}>Address: </span> Vitsi 12, Orestiada, Greece
 			</div>
 		</div>
+		<Footer />
 	</main>
 )
 
