@@ -16,21 +16,30 @@ const landingPage = () => {
 				around.
 			</h3>
 			<div className={classes.Icons}>
-				<a href='https://www.facebook.com/giannis.amaxopoulos.5'>
+				<a
+					href='https://www.facebook.com/giannis.amaxopoulos.5'
+					target='_blank'
+					rel='noopener noreferrer'>
 					<FontAwesomeIcon
 						className={classes.facebook}
 						icon={['fab', 'facebook']}
 						size='2x'
 					/>
 				</a>
-				<a href='https://www.linkedin.com/in/ioannis-amaxopoulos-30b05617b/'>
+				<a
+					href='https://www.linkedin.com/in/ioannis-amaxopoulos-30b05617b/'
+					target='_blank'
+					rel='noopener noreferrer'>
 					<FontAwesomeIcon
 						className={classes.linkedin}
 						icon={['fab', 'linkedin']}
 						size='2x'
 					/>
 				</a>
-				<a href='https://github.com/johndaamax'>
+				<a
+					href='https://github.com/johndaamax'
+					target='_blank'
+					rel='noopener noreferrer'>
 					<FontAwesomeIcon
 						className={classes.github}
 						icon={['fab', 'github']}

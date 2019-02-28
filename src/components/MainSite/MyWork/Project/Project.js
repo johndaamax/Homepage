@@ -10,7 +10,11 @@ const project = props => {
 			<p className={classes.Description}>{props.description}</p>
 			<img src={props.imgSrc} alt='Project' onClick={props.showPopup} />
 
-			<a href={props.link} className={classes.BtnDark}>
+			<a
+				href={props.link}
+				className={classes.BtnDark}
+				target='_blank'
+				rel='noopener noreferrer'>
 				<FontAwesomeIcon icon={['fab', 'github']} /> Github
 			</a>
 		</div>
