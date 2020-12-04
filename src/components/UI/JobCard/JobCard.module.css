@@ -5,7 +5,17 @@
     margin-bottom: 1.5rem;
 }
 
+.Duration {
+    color: #f27689;
+}
+
 hr {
     border-top: 2px solid #a7a7a7;
     margin: 0.3rem 0;
 }
+
+/* @media screen and (min-width: 768px) {
+	.CardWrapper {
+		width: 60%;
+	}
+} */

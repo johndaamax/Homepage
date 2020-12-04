@@ -4,6 +4,7 @@ import styles from './About.module.css'
 import CustomHeading from '../../UI/CustomHeading/CustomHeading'
 import Portrait from '../../UI/Portrait/Portrait'
 import JobCard from '../../UI/JobCard/JobCard'
+import ContainerWithTitle from '../../UI/ContainerWithTitle/ContainerWithTitle'
 
 import { jobs } from '../../../data/jobs';
 
@@ -19,28 +20,26 @@ const AboutMe = () => {
 				<div className={styles.BioImage}>
 					<Portrait />
 				</div>
-
-				<div className={styles.Bio}>
-					<h3 style={{ color: '#eece1a' }}>BIO</h3>
-					<p style={{ color: '#fff' }}>
-						Hi, I'm Ioannis, an IT graduate, currently unemployed but looking for
-						work as a web developer (frontend, mostly experienced with React).
+				<ContainerWithTitle title='Bio'>
+					<p className={styles.Bio}>
+						Hi, I'm Ioannis, an IT graduate that
 						Building web apps and websites is my passion and I'm constantly trying
 						to learn all the new technologies and trends around web app
 						development.
 					</p>
-				</div>
+				</ContainerWithTitle>
 			</div>
-			<h2>Professional Experience</h2>
-			{jobs.map(job => (
-				<JobCard
-					title={job.title}
-					company={job.company}
-					fromTo={job.fromTo}
-					type={job.type}
-					description={job.description}
-				/>
-			))}
+			<ContainerWithTitle title='Professional Experience'>
+				{jobs.reverse().map(job => (
+					<JobCard
+						title={job.title}
+						company={job.company}
+						fromTo={job.fromTo}
+						type={job.type}
+						description={job.description}
+					/>
+				))}
+			</ContainerWithTitle>
 		</main>
 	)
 }

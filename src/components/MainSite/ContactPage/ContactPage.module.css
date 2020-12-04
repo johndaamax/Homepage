@@ -1,33 +1,26 @@
-.ContactPage {
-	min-width: 350px;
-	height: 100%;
-}
-
-.Box {
+.InfoContainer {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	align-items: center;
 	margin-top: 1rem;
 }
-.Box div {
+.InfoBox {
 	border-radius: 10px;
-	font-size: 2rem;
+	font-size: 28px;
 	text-align: center;
-	width: 60%;
-	min-width: 240px;
-	border: 3px #fff solid;
-	padding: 1.5rem 2.5rem;
+	width: 48%;
+	border: 2px #fff solid;
+	padding: 1.5rem 1rem;
 	margin-bottom: 3rem;
-	transition: all 0.5s ease-out;
+	transition: all 0.8s ease-out;
 	color: #fff;
 }
-.Box div:hover {
-	padding: 0.5rem 1.5rem;
-	background: #eece1a;
+.InfoBox:hover {
+	background: #EECE1A;
 	color: #000;
 }
-.Box div:hover span {
+.InfoBox:hover span {
 	color: #000;
 }
 
@@ -35,34 +28,23 @@
 	color: #eece1a;
 }
 
-@media screen and (max-width: 750px) {
-	.ContactPage {
-		width: 100vw;
-		height: 100vh;
-		background: #454545;
-		transition: all 0.8s ease-out;
-		padding: 2rem;
-	}
-
-	.Box div {
-		font-size: 1.2rem;
-		border: 2px #fff solid;
-		padding: 1rem 2rem;
-		margin-bottom: 3rem;
-		transition: all 0.5s ease-out;
+@media screen and (max-width: 960px) {
+	.InfoBox {
+		font-size: 22px;
 	}
 }
 
-@media screen and (max-width: 450px) {
-	.ContactPage {
-		padding: 1rem;
+@media screen and (max-width: 768px) {
+	.InfoBox {
+		width: 90%;
+		padding: 0.7rem 1rem;
+		margin-bottom: 2rem;
 	}
+}
 
-	.Box div {
+@media screen and (max-width: 442px) {
+	.InfoBox {
 		font-size: 1rem;
-		border: 2px #fff solid;
-		padding: 0.7rem 1.5rem;
-		margin-bottom: 1.5rem;
-		transition: all 0.5s ease-out;
+		padding: 0.5rem 0.5rem;
 	}
 }
