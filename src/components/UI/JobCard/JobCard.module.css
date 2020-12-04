@@ -1,0 +1,11 @@
+.CardWrapper {
+    display: flex;
+    flex-flow: column wrap;
+    border-radius: 16px;
+    margin-bottom: 1.5rem;
+}
+
+hr {
+    border-top: 2px solid #a7a7a7;
+    margin: 0.3rem 0;
+}

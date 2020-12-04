@@ -1,0 +1,12 @@
+.MyWork {
+	transition: all 0.8s ease-out;
+}
+
+.Projects {
+	display: grid;
+	grid-gap: 1rem;
+}
+
+@media (min-width: 768px) {
+	.Projects { grid-template-columns: repeat(2, 1fr); }
+}
