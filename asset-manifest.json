@@ -1,18 +1,27 @@
 {
-  "main.css": "/homepage/static/css/main.c48c30bd.chunk.css",
-  "main.js": "/homepage/static/js/main.83cc84b3.chunk.js",
-  "main.js.map": "/homepage/static/js/main.83cc84b3.chunk.js.map",
-  "runtime~main.js": "/homepage/static/js/runtime~main.810d44d7.js",
-  "runtime~main.js.map": "/homepage/static/js/runtime~main.810d44d7.js.map",
-  "static/js/2.b1560f63.chunk.js": "/homepage/static/js/2.b1560f63.chunk.js",
-  "static/js/2.b1560f63.chunk.js.map": "/homepage/static/js/2.b1560f63.chunk.js.map",
-  "index.html": "/homepage/index.html",
-  "precache-manifest.9f6565f3c463f43706ab7c12f2ba0b7f.js": "/homepage/precache-manifest.9f6565f3c463f43706ab7c12f2ba0b7f.js",
-  "service-worker.js": "/homepage/service-worker.js",
-  "static/css/main.c48c30bd.chunk.css.map": "/homepage/static/css/main.c48c30bd.chunk.css.map",
-  "static/media/App.css": "/homepage/static/media/background.7f45c741.jpg",
-  "static/media/discord_bot.jpg": "/homepage/static/media/discord_bot.0fd4b5ff.jpg",
-  "static/media/Portrait.css": "/homepage/static/media/portrait.544deee3.jpg",
-  "static/media/refactoring.png": "/homepage/static/media/refactoring.7b6d899c.png",
-  "static/media/rgbgame.png": "/homepage/static/media/rgbgame.423f48e0.png"
+  "files": {
+    "main.css": "/homepage/static/css/main.1fae9ebf.chunk.css",
+    "main.js": "/homepage/static/js/main.b0a8c414.chunk.js",
+    "main.js.map": "/homepage/static/js/main.b0a8c414.chunk.js.map",
+    "runtime-main.js": "/homepage/static/js/runtime-main.2a62a2e3.js",
+    "runtime-main.js.map": "/homepage/static/js/runtime-main.2a62a2e3.js.map",
+    "static/js/2.9a21100c.chunk.js": "/homepage/static/js/2.9a21100c.chunk.js",
+    "static/js/2.9a21100c.chunk.js.map": "/homepage/static/js/2.9a21100c.chunk.js.map",
+    "index.html": "/homepage/index.html",
+    "static/css/main.1fae9ebf.chunk.css.map": "/homepage/static/css/main.1fae9ebf.chunk.css.map",
+    "static/js/2.9a21100c.chunk.js.LICENSE.txt": "/homepage/static/js/2.9a21100c.chunk.js.LICENSE.txt",
+    "static/media/globalStyles.css": "/homepage/static/media/background.8ab99660.jpg",
+    "static/media/discord_bot.d23c2cb8.jpg": "/homepage/static/media/discord_bot.d23c2cb8.jpg",
+    "static/media/ipTracker.9a244bae.png": "/homepage/static/media/ipTracker.9a244bae.png",
+    "static/media/pokedex.afc0f6c2.png": "/homepage/static/media/pokedex.afc0f6c2.png",
+    "static/media/Portrait.module.css": "/homepage/static/media/profile.0c67bb59.jpg",
+    "static/media/refactoring.92729826.png": "/homepage/static/media/refactoring.92729826.png",
+    "static/media/rgbgame.830b6727.png": "/homepage/static/media/rgbgame.830b6727.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2a62a2e3.js",
+    "static/js/2.9a21100c.chunk.js",
+    "static/css/main.1fae9ebf.chunk.css",
+    "static/js/main.b0a8c414.chunk.js"
+  ]
 }
