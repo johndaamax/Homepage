@@ -11,8 +11,6 @@ const MyWork = () => {
 	const [showPopup, setShowPopup] = useState(false);
 	const [selectedImage, setSelectedImage] = useState(null);
 
-	console.log(projects)
-
 	const showPopupHandler = image => {
 		setShowPopup(prevState => !prevState.showPopup);
 		setSelectedImage(image);
