@@ -1,12 +1,12 @@
-import React from 'react'
-
-import styles from './About.module.css'
-import CustomHeading from '../../UI/CustomHeading/CustomHeading'
-import Portrait from '../../UI/Portrait/Portrait'
-import JobCard from '../../UI/JobCard/JobCard'
-import ContainerWithTitle from '../../UI/ContainerWithTitle/ContainerWithTitle'
+import CustomHeading from '../../UI/CustomHeading/CustomHeading';
+import Portrait from '../../UI/Portrait/Portrait';
+import JobCard from '../../UI/JobCard/JobCard';
+import ContainerWithTitle from '../../UI/ContainerWithTitle/ContainerWithTitle';
 
 import { jobs } from '../../../data/jobs';
+import { bio } from '../../../data/bio';
+
+import styles from './About.module.css';
 
 const AboutMe = () => {
 	return (
@@ -21,12 +21,7 @@ const AboutMe = () => {
 					<Portrait />
 				</div>
 				<ContainerWithTitle title='Bio'>
-					<p className={styles.Bio}>
-						Hi, I'm Ioannis, an IT graduate that
-						Building web apps and websites is my passion and I'm constantly trying
-						to learn all the new technologies and trends around web app
-						development.
-					</p>
+					<p className={styles.Bio}>{bio}</p>
 				</ContainerWithTitle>
 			</div>
 			<ContainerWithTitle title='Professional Experience'>

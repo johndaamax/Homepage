@@ -1,9 +1,10 @@
 .MenuIcon {
 	position: absolute;
-	z-index: 3;
-	right: 35px;
-	top: 12px;
+	z-index: 5;
+	right: 20px;
+	top: 5px;
 	cursor: pointer;
+	padding: 0.5rem;
 }
 
 .Bar1,

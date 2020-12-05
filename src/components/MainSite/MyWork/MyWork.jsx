@@ -1,9 +1,9 @@
 import { useState } from 'react';
 
 import CustomHeading from '../../UI/CustomHeading/CustomHeading';
-import Project from './Project/Project';
+import ProjectCard from '../../UI/ProjectCard/ProjectCard';
 import Popup from '../../UI/Popup/Popup';
-import { projects } from './projects';
+import { projects } from '../../../data/projects';
 
 import styles from './MyWork.module.css';
 
@@ -31,16 +31,14 @@ const MyWork = () => {
 				caption='Check out some of my projects...'
 			/>
 			<div className={styles.Projects}>
-				{projects.reverse().map(project => (
-					<Project
+				{projects.slice(0).reverse().map(project => (
+					<ProjectCard
 						key={project.id}
-						title={project.title}
-						description={project.description}
-						imgSrc={project.image}
-						link={project.link}
+						project={project}
 						showPopup={() => showPopupHandler(project.image)}
 					/>
-				))}</div>
+				))}
+			</div>
 		</main>
 	)
 }

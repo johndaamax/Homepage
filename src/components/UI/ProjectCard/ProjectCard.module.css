@@ -1,18 +1,23 @@
-.Project {
-	min-width: 350px;
+.ImageContainer {
+	height: 350px;
+	max-height: 350px;
+	border: 1px solid #545454;
+	border-radius: 10px;
 }
 
-.imageContainer {
-	width: 100%;
+@media screen and (max-width: 442px){
+	.ImageContainer {
+		height: 280px;
+		max-height: 280px;
+	}
 }
 
 img {
 	width: 100%;
-	height: auto;
-	border-radius: 10px;
-	border: 1px solid #606060;
+	height: 100%;
 	margin: 0 auto;
-	padding: 0.3rem;
+	padding: 0.2rem;
+	object-fit: contain;
 }
 
 img:hover {
@@ -28,8 +33,9 @@ img:hover {
 	padding: 0.5rem 1rem;
 	border: 0;
 	border-radius: 10px;
-	margin-bottom: 0.3rem;
+	margin: 0.5rem 0;
 	text-decoration: none;
+	flex: 1 0 0%;
 }
 
 .BtnDark:hover {
@@ -66,4 +72,12 @@ img:hover {
 	text-align: center;
 	text-transform: uppercase;
 	margin: auto;
+}
+
+.Links {
+	display: flex;
+}
+
+.Links a:first-child {
+	margin-right: 0.5rem;
 }

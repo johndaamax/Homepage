@@ -3,6 +3,7 @@
     flex-flow: column wrap;
     border-radius: 16px;
     margin-bottom: 1.5rem;
+    
 }
 
 .Duration {
@@ -14,8 +15,8 @@ hr {
     margin: 0.3rem 0;
 }
 
-/* @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
 	.CardWrapper {
-		width: 60%;
+		font-size: 120%;
 	}
-} */
+} 

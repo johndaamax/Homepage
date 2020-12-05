@@ -1,8 +1,8 @@
-import p1 from '../../../assets/images/projects/discord_bot.jpg';
-import p2 from '../../../assets/images/projects/rgbgame.png';
-import p3 from '../../../assets/images/projects/refactoring.png';
-import p4 from '../../../assets/images/projects/ipTracker.png';
-import p5 from '../../../assets/images/projects/pokedex.png';
+import p1 from '../assets/images/projects/discord_bot.jpg';
+import p2 from '../assets/images/projects/rgbgame.png';
+import p3 from '../assets/images/projects/refactoring.png';
+import p4 from '../assets/images/projects/ipTracker.png';
+import p5 from '../assets/images/projects/pokedex.png';
 
 export const projects = [
 	{
@@ -35,7 +35,10 @@ export const projects = [
 		description:
 			'An app which lets the user search any IPv4 or IPv6 address, or any domain and mark it on the map. Data taken from IPIFY Geo API. Built with React, map by Leaflet.',
 		image: p4,
-		link: 'https://github.com/johndaamax/ip-address-tracker'
+		link: 'https://github.com/johndaamax/ip-address-tracker',
+		isDeployed: {
+			link: 'https://ip-address-tracker-five-fawn.vercel.app/'
+		}
 	},
 	{
 		id: 5,
