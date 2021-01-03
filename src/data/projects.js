@@ -3,6 +3,7 @@ import p2 from '../assets/images/projects/rgbgame.png';
 import p3 from '../assets/images/projects/refactoring.png';
 import p4 from '../assets/images/projects/ipTracker.png';
 import p5 from '../assets/images/projects/pokedex.png';
+import p6 from '../assets/images/projects/world-countries.png';
 
 export const projects = [
 	{
@@ -47,5 +48,16 @@ export const projects = [
 			'An app that contains pokedex data for pokemon from all generations. Able to click on pokemon and display information about them, such as types, abilities, weight, height, stats etc. The user can also search for specific pokemon, either by name or by national pokedex number. All data used are fetched from PokeAPI. Pokemon assets courtesy of pokemon.com',
 		image: p5,
 		link: 'https://github.com/johndaamax/pokedex-app'
+	},
+	{
+		id: 6,
+		title: 'World Countries App',
+		description:
+			'A mini project that pulls country data from the REST Countries API (https://restcountries.eu). The user can view a grid of all the countries of the world, click on each of them and display further information about them and also search by name and filter by region. Made to be responsive for all screen sizes, desktop and mobile.\nTechnologies used: React with TypeScript, SCSS.',
+		image: p6,
+		link: 'https://github.com/johndaamax/world-countries',
+		isDeployed: {
+			link: 'https://world-rest-countries-kruh5y1j3.vercel.app/'
+		}
 	},
 ]
