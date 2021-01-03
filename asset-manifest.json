@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/homepage/static/css/main.1fae9ebf.chunk.css",
-    "main.js": "/homepage/static/js/main.b0a8c414.chunk.js",
-    "main.js.map": "/homepage/static/js/main.b0a8c414.chunk.js.map",
+    "main.js": "/homepage/static/js/main.6f9af4d4.chunk.js",
+    "main.js.map": "/homepage/static/js/main.6f9af4d4.chunk.js.map",
     "runtime-main.js": "/homepage/static/js/runtime-main.2a62a2e3.js",
     "runtime-main.js.map": "/homepage/static/js/runtime-main.2a62a2e3.js.map",
     "static/js/2.9a21100c.chunk.js": "/homepage/static/js/2.9a21100c.chunk.js",
@@ -16,12 +16,13 @@
     "static/media/pokedex.afc0f6c2.png": "/homepage/static/media/pokedex.afc0f6c2.png",
     "static/media/Portrait.module.css": "/homepage/static/media/profile.0c67bb59.jpg",
     "static/media/refactoring.92729826.png": "/homepage/static/media/refactoring.92729826.png",
-    "static/media/rgbgame.830b6727.png": "/homepage/static/media/rgbgame.830b6727.png"
+    "static/media/rgbgame.830b6727.png": "/homepage/static/media/rgbgame.830b6727.png",
+    "static/media/world-countries.f0f0798d.png": "/homepage/static/media/world-countries.f0f0798d.png"
   },
   "entrypoints": [
     "static/js/runtime-main.2a62a2e3.js",
     "static/js/2.9a21100c.chunk.js",
     "static/css/main.1fae9ebf.chunk.css",
-    "static/js/main.b0a8c414.chunk.js"
+    "static/js/main.6f9af4d4.chunk.js"
   ]
 }
