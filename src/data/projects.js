@@ -4,6 +4,8 @@ import p3 from '../assets/images/projects/refactoring.png';
 import p4 from '../assets/images/projects/ipTracker.png';
 import p5 from '../assets/images/projects/pokedex.png';
 import p6 from '../assets/images/projects/world-countries.png';
+import p7 from '../assets/images/projects/shortify-demo.png';
+import p8 from '../assets/images/projects/amazon-demo.png';
 
 export const projects = [
 	{
@@ -53,11 +55,33 @@ export const projects = [
 		id: 6,
 		title: 'World Countries App',
 		description:
-			'A mini project that pulls country data from the REST Countries API (https://restcountries.eu). The user can view a grid of all the countries of the world, click on each of them and display further information about them and also search by name and filter by region. Made to be responsive for all screen sizes, desktop and mobile.\nTechnologies used: React with TypeScript, SCSS.',
+			'A mini project that pulls country data from the REST Countries API (https://restcountries.com). The user can view a grid of all the countries of the world, click on each of them and display further information about them and also search by name and filter by region. Made to be responsive for all screen sizes, desktop and mobile.\nTechnologies used: React with TypeScript, SCSS.',
 		image: p6,
 		link: 'https://github.com/johndaamax/world-countries',
 		isDeployed: {
 			link: 'https://world-rest-countries-kruh5y1j3.vercel.app/'
+		}
+	},
+	{
+		id: 7,
+		title: 'URL Shortener App',
+		description:
+			'A simple app to help you shorten long URL\'s. Template project from Frontend Mentor (https://www.frontendmentor.io/).\nUsing shrtco.de\'s (https://shrtco.de/) API. The shortened links are also saved to the browser\'s local storage for usage across sessions .\nTechnologies used: React with TypeScript, TailwindCSS.',
+		image: p7,
+		link: 'https://github.com/johndaamax/shortify-with-tailwind',
+		isDeployed: {
+			link: 'https://shortify-with-tailwind-ia0abig7o-johndaamax.vercel.app/'
+		}
+	},
+	{
+		id: 8,
+		title: 'Amazon Clone App',
+		description:
+			'A small clone of the Amazon web store with sample products. Using Firebase backend for authentication/signin/signup and a databese to pull the products from.\nTechnologies used: React, TailwindCSS.',
+		image: p8,
+		link: 'https://github.com/johndaamax/amazon-clone',
+		isDeployed: {
+			link: 'https://amazon-clone-hjikuh4ew-johndaamax.vercel.app/'
 		}
 	},
 ]
