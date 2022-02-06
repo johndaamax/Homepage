@@ -59,7 +59,7 @@ export const projects = [
 		image: p6,
 		link: 'https://github.com/johndaamax/world-countries',
 		isDeployed: {
-			link: 'https://world-rest-countries-kruh5y1j3.vercel.app/'
+			link: 'https://world-rest-countries.vercel.app/'
 		}
 	},
 	{
@@ -70,7 +70,7 @@ export const projects = [
 		image: p7,
 		link: 'https://github.com/johndaamax/shortify-with-tailwind',
 		isDeployed: {
-			link: 'https://shortify-with-tailwind-ia0abig7o-johndaamax.vercel.app/'
+			link: 'https://shortify-with-tailwind.vercel.app/'
 		}
 	},
 	{
@@ -81,7 +81,7 @@ export const projects = [
 		image: p8,
 		link: 'https://github.com/johndaamax/amazon-clone',
 		isDeployed: {
-			link: 'https://amazon-clone-hjikuh4ew-johndaamax.vercel.app/'
+			link: 'https://amazon-clone-two-zeta.vercel.app/'
 		}
 	},
 ]
