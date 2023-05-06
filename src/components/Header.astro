@@ -1,0 +1,36 @@
+---
+import MenuIcon from './UI/MenuIcon/MenuIcon';
+import MenuBranding from '../components/Header/MenuBranding/MenuBranding';
+import SideNav from '../components/Header/SideNav/SideNav';
+---
+
+<header>
+  <div class="navbar">
+    <MenuIcon client:load />
+  </div>
+  <nav class="menu">
+    <MenuBranding client:load />
+    <SideNav client:load />
+  </nav>
+</header>
+
+<style>
+  header {
+    position: fixed;
+    width: 100%;
+  }
+  .menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
+
+  .navbar {
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+    background-color: hsl(227deg 87% 3%);
+  }
+</style>

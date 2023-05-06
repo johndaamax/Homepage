@@ -1,0 +1,44 @@
+---
+interface Props {
+  company: string;
+  fromTo: string;
+  title: string;
+  type: string;
+  description: string;
+}
+
+const { company, fromTo, title, type, description } = Astro.props;
+---
+
+<div class="card">
+  <h3><strong>{company}</strong></h3>
+  <span class="duration">{fromTo}</span>
+  <h4>{title}</h4>
+  <h5>{type}</h5>
+  <hr />
+  <p>{description}</p>
+</div>
+
+<style>
+  .card {
+    display: flex;
+    flex-flow: column wrap;
+    border-radius: 16px;
+    margin-bottom: 1.5rem;
+  }
+
+  .duration {
+    color: #f27689;
+  }
+
+  hr {
+    border-top: 2px solid #a7a7a7;
+    margin: 0.3rem 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    .cardWrapper {
+      font-size: 120%;
+    }
+  }
+</style>

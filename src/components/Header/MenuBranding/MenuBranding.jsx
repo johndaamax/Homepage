@@ -1,18 +1,19 @@
-import React from 'react'
+import React from 'react';
+import { useStore } from '@nanostores/react';
+import { isMenuVisible } from '../../../store';
 
-import styles from './MenuBranding.module.css'
-import Portrait from '../../UI/Portrait/Portrait'
+import styles from './MenuBranding.module.css';
 
-const MenuBranding = ({ visible }) => {
-	let attachedClasses = [styles.MenuBranding]
-	if (visible) {
-		attachedClasses = [styles.MenuBranding, styles.Show]
-	}
-	return (
-		<div className={attachedClasses.join(' ')}>
-			<Portrait />
-		</div>
-	)
+export default function MenuBranding() {
+  const $isMenuVisible = useStore(isMenuVisible);
+
+  let attachedClasses = [styles.MenuBranding];
+  if ($isMenuVisible) {
+    attachedClasses = [styles.MenuBranding, styles.Show];
+  }
+  return (
+    <div className={attachedClasses.join(' ')}>
+      <div className={styles.Portrait} />
+    </div>
+  );
 }
-
-export default MenuBranding

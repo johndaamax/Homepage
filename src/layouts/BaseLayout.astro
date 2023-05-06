@@ -1,0 +1,31 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../globalStyles.css';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script defer src="node_modules/@fortawesome/fontawesome-free/js/brands.js"></script>
+    <script defer src="node_modules/@fortawesome/fontawesome-free/js/solid.js"></script>
+    <script defer src="node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"></script>
+  </head>
+  <body>
+    <div class="layout">
+      <Header />
+      <slot />
+      <Footer />
+    </div>
+  </body>
+
+  <style>
+    .layout {
+      background-color: hsl(210 37% 8% / 0.98);
+      min-height: 100vh;
+      color: #fff;
+      z-index: 1;
+    }
+  </style>
+</html>

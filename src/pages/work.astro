@@ -1,0 +1,70 @@
+---
+import ContainerWithTitle from '../components/ContainerWithTitle.astro';
+import CustomHeading from '../components/CustomHeading.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import { bio } from '../data/bio';
+import { jobs } from '../data/jobs';
+import JobCard from '../components/JobCard.astro';
+---
+
+<BaseLayout>
+  <main>
+    <CustomHeading mainHeading="About " secondaryHeading="Me" caption="A few things about me..." />
+    <div class="gridContainer">
+      <div class="bioImage">
+        <div class="portrait"></div>
+      </div>
+      <ContainerWithTitle title="Bio">
+        <p class="bio">{bio}</p>
+      </ContainerWithTitle>
+    </div>
+    <ContainerWithTitle title="Professional Experience">
+      {jobs.reverse().map((job) => <JobCard title={job.title} company={job.company} fromTo={job.fromTo} type={job.type} description={job.description} />)}
+    </ContainerWithTitle>
+  </main>
+</BaseLayout>
+
+<style>
+  .gridContainer {
+    display: grid;
+    grid-gap: 2rem;
+    padding-bottom: 50px;
+  }
+
+  .bioImage {
+    margin: 0 auto;
+  }
+
+  .job {
+    padding: 1rem;
+    border-bottom: #eece1a 5px solid;
+  }
+
+  .portrait {
+    width: 250px;
+    height: 250px;
+    background-image: url(../assets/images/profile.jpg);
+    background-size: cover;
+    border-radius: 20%;
+    border: 2px solid #eece1a;
+    z-index: 3;
+  }
+
+  @media screen and (max-width: 768px) {
+    .portrait {
+      width: 150px;
+      height: 150px;
+      transition: all 0.8s ease-out;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .gridContainer {
+      grid-template-columns: 1fr 2fr;
+    }
+    .bio {
+      font-size: 120%;
+    }
+  }
+</style>

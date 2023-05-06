@@ -1,0 +1,75 @@
+---
+import CustomHeading from '../components/CustomHeading.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import '../globalStyles.css';
+---
+
+<BaseLayout>
+  <main>
+    <CustomHeading mainHeading="Contact " secondaryHeading="Me" caption="This is how you can reach me..." />
+    <div class="infoContainer">
+      <div class="infoBox">
+        <span class="text">Email:</span> ia.uoistud@gmail.com
+      </div>
+      <div class="infoBox">
+        <span class="text">Phone:</span> (+30) 6941524452
+      </div>
+      <div class="infoBox">
+        <span class="text">Location:</span> Brussels, Belgium
+      </div>
+    </div>
+  </main>
+</BaseLayout>
+
+<style>
+  .infoContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  .infoBox {
+    border-radius: 10px;
+    font-size: 28px;
+    text-align: center;
+    width: 48%;
+    border: 2px #fff solid;
+    padding: 1.5rem 1rem;
+    margin-bottom: 3rem;
+    transition: all 0.8s ease-out;
+    color: #fff;
+  }
+  .infoBox:hover {
+    background: #eece1a;
+    color: #000;
+  }
+  .infoBox:hover span {
+    color: #000;
+  }
+
+  .text {
+    color: #eece1a;
+  }
+
+  @media screen and (max-width: 960px) {
+    .infoBox {
+      font-size: 22px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .infoBox {
+      width: 90%;
+      padding: 0.7rem 1rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  @media screen and (max-width: 442px) {
+    .infoBox {
+      font-size: 1rem;
+      padding: 0.5rem 0.5rem;
+    }
+  }
+</style>

@@ -1,0 +1,58 @@
+---
+import '@fortawesome/fontawesome-free';
+---
+
+<footer>
+  <p>
+    Powered by
+    <span>Astro &</span>
+    <i class="fa-brands fa-react fa-lg react"></i>
+    <span>React</span> © 2023
+  </p>
+</footer>
+
+<style>
+  footer {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 60px;
+    background-color: hsl(227deg 87% 3%);
+    color: white;
+  }
+
+  footer p {
+    font-size: 20px;
+  }
+
+  footer p span {
+    font-size: 28px;
+  }
+
+  .icon {
+    margin-left: 10px;
+    color: rgb(50, 173, 245);
+  }
+
+  .react {
+    color: darkturquoise;
+  }
+
+  @media screen and (max-width: 450px) {
+    footer {
+      height: 50px;
+      transition: all 0.5s ease-out;
+    }
+
+    footer p {
+      font-size: 16px;
+    }
+
+    footer p span {
+      font-size: 18px;
+    }
+  }
+</style>

@@ -1,0 +1,65 @@
+---
+interface Props {
+  mainHeading: string;
+  secondaryHeading: string;
+  caption: string;
+}
+
+const { mainHeading, secondaryHeading, caption } = Astro.props;
+---
+
+<div class="custom-heading">
+  <h1 class="lg-heading">
+    {mainHeading}&nbsp;
+    <span class="secondary-name">{secondaryHeading}</span>
+  </h1>
+  <h2 class="caption">{caption}</h2>
+</div>
+
+<style>
+  .custom-heading {
+    margin-top: 60px;
+    transition: all 0.8s ease-out;
+  }
+
+  .lg-heading {
+    font-size: 5rem;
+    padding: 1rem;
+  }
+
+  .secondary-name {
+    color: #eece1a;
+  }
+
+  .caption {
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    font-size: 2rem;
+    background: rgba(73, 73, 73, 0.3);
+  }
+
+  @media screen and (min-width: 768px) {
+    .LgHeading {
+      font-size: 5rem;
+    }
+  }
+
+  @media screen and (min-width: 442px) and (max-width: 768px) {
+    .lg-heading {
+      font-size: 4rem;
+    }
+    .caption {
+      font-size: 1.5rem;
+    }
+  }
+
+  @media screen and (max-width: 442px) {
+    .lg-heading {
+      font-size: 2rem;
+    }
+    .caption {
+      font-size: 1rem;
+    }
+  }
+</style>

@@ -1,0 +1,81 @@
+---
+import '@fortawesome/fontawesome-free';
+import '../globalStyles.css';
+
+import CustomHeading from '../components/CustomHeading.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout>
+  <main class="landing-page">
+    <CustomHeading mainHeading="Ioannis" secondaryHeading="Amaxopoulos" caption="Web Developer, Programmer & Motorsport Enthusiast" />
+    <h3 class="welcome">Welcome to my portfolio site! Click on the menu icon in the top right to browse around.</h3>
+    <div class="icons">
+      <a href="https://www.facebook.com/giannis.amaxopoulos.5" target="_blank" rel="noopener noreferrer">
+        <!-- <FontAwesomeIcon class="facebook" icon={['fab', 'facebook']} size="2x" /> -->
+        <i class="fa-brands fa-facebook fa-lg facebook"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/ioannis-amaxopoulos-30b05617b/" target="_blank" rel="noopener noreferrer">
+        <!-- <FontAwesomeIcon class="linkedin" icon={['fab', 'linkedin']} size="2x" /> -->
+        <i class="fa-brands fa-linkedin fa-lg linkedin"></i>
+      </a>
+      <a href="https://github.com/johndaamax" target="_blank" rel="noopener noreferrer">
+        <!-- <FontAwesomeIcon class="github" icon={['fab', 'github']} size="2x" /> -->
+        <i class="fa-brands fa-github fa-lg github"></i>
+      </a>
+    </div>
+  </main>
+</BaseLayout>
+
+<style>
+  .landing-page {
+    overflow: hidden;
+  }
+
+  h1,
+  h2,
+  h3 {
+    margin: 0;
+    font-weight: 400;
+    color: #fff;
+  }
+
+  .welcome {
+    min-width: 300px;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    background: rgba(73, 73, 73, 0.5);
+  }
+
+  .icons {
+    min-width: 250px;
+  }
+
+  .icons a {
+    color: #fff;
+    padding: 0;
+    margin-left: 30px;
+    font-size: 1.3rem;
+  }
+
+  .facebook:hover {
+    color: #4267b2;
+    transition: all 0.7s linear;
+  }
+  .linkedin:hover {
+    color: #0077b5;
+    transition: all 0.7s linear;
+  }
+  .github:hover {
+    color: rgb(78, 241, 56);
+    transition: all 0.7s linear;
+  }
+
+  @media screen and (max-width: 450px) {
+    .landing-page {
+      transition: all 0.8s ease-out;
+      padding: 1.5rem;
+    }
+  }
+</style>
