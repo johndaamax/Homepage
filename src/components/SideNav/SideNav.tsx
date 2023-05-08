@@ -14,22 +14,22 @@ export default function SideNav() {
   return (
     <ul className={attachedClasses.join(' ')}>
       <li className={navItemClasses.join(' ')}>
-        <a onClick={() => isMenuVisible.set(false)} href="/" className={styles.NavLink}>
+        <a onClick={() => isMenuVisible.set(false)} href="/homepage" className={styles.NavLink}>
           Home
         </a>
       </li>
       <li className={navItemClasses.join(' ')}>
-        <a onClick={() => isMenuVisible.set(false)} href="/about" className={styles.NavLink}>
+        <a onClick={() => isMenuVisible.set(false)} href="/homepage/about" className={styles.NavLink}>
           About me
         </a>
       </li>
       <li className={navItemClasses.join(' ')}>
-        <a onClick={() => isMenuVisible.set(false)} href="/work" className={styles.NavLink}>
+        <a onClick={() => isMenuVisible.set(false)} href="/homepage/work" className={styles.NavLink}>
           My Work
         </a>
       </li>
       <li className={navItemClasses.join(' ')}>
-        <a onClick={() => isMenuVisible.set(false)} href="/contact" className={styles.NavLink}>
+        <a onClick={() => isMenuVisible.set(false)} href="/homepage/contact" className={styles.NavLink}>
           Contact Me
         </a>
       </li>
