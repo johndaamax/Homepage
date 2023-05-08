@@ -1,5 +1,5 @@
 import { useStore } from '@nanostores/react';
-import { isMenuVisible } from '../../../store';
+import { isMenuVisible } from '../../store';
 
 import styles from './MenuIcon.module.css';
 

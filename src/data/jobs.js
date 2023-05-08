@@ -41,7 +41,7 @@ export const jobs = [
     title: 'Frontend Engineer',
     company: 'BNP Paribas Fortis',
     fromTo: 'Feb 2022 - Present',
-    type: 'Full-Time',
+    type: 'Contract',
     description:
       "Responsible for developing internal applications for the bank, my focus is providing the skills to develop and maintain the frontend part of it. Also a contributor to the bank's internal design system by creating and maintaining reusable components. Working with tools and technologies such as Typescipt, React, Vite, styled-components, OpenText.",
   },

@@ -10,7 +10,7 @@ const { mainHeading, secondaryHeading, caption } = Astro.props;
 
 <div class="custom-heading">
   <h1 class="lg-heading">
-    {mainHeading}&nbsp;
+    {mainHeading}
     <span class="secondary-name">{secondaryHeading}</span>
   </h1>
   <h2 class="caption">{caption}</h2>
@@ -18,13 +18,13 @@ const { mainHeading, secondaryHeading, caption } = Astro.props;
 
 <style>
   .custom-heading {
-    margin-top: 60px;
+    margin-top: 4rem;
     transition: all 0.8s ease-out;
   }
 
   .lg-heading {
     font-size: 5rem;
-    padding: 1rem;
+    padding: 1rem 0;
   }
 
   .secondary-name {
@@ -34,13 +34,12 @@ const { mainHeading, secondaryHeading, caption } = Astro.props;
   .caption {
     border-radius: 5px;
     margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
+    padding: 0.2rem 0;
     font-size: 2rem;
-    background: rgba(73, 73, 73, 0.3);
   }
 
   @media screen and (min-width: 768px) {
-    .LgHeading {
+    .lgHeading {
       font-size: 5rem;
     }
   }

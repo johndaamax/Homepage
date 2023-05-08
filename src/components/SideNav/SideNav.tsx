@@ -1,6 +1,5 @@
-import React from 'react';
 import { useStore } from '@nanostores/react';
-import { isMenuVisible } from '../../../store';
+import { isMenuVisible } from '../../store';
 import styles from './SideNav.module.css';
 
 export default function SideNav() {

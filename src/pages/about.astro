@@ -1,38 +1,53 @@
 ---
-import CustomHeading from '../components/CustomHeading.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import ProjectCard from '../components/ProjectCard.astro';
-import { projects } from '../data/projects';
-import '../globalStyles.css';
+import CustomHeading from '../components/CustomHeading.astro';
+import JobCard from '../components/JobCard.astro';
+import ContainerWithTitle from '../components/ContainerWithTitle.astro';
+import Portrait from '../components/Portrait.astro';
+
+import { bio } from '../data/bio';
+import { jobs } from '../data/jobs';
 ---
 
 <BaseLayout>
-  <main class="myWork">
-    <CustomHeading mainHeading="My " secondaryHeading="Work" caption="Check out some of my projects..." />
-    <div class="projects">
-      {
-        projects
-          .slice(0)
-          .reverse()
-          .map((project) => <ProjectCard project={project} />)
-      }
+  <main>
+    <CustomHeading mainHeading="About " secondaryHeading="Me" caption="A few things about me..." />
+    <div class="gridContainer">
+      <div class="bioImage">
+        <Portrait />
+      </div>
+      <ContainerWithTitle title="Bio">
+        <p class="bio">{bio}</p>
+      </ContainerWithTitle>
     </div>
+    <ContainerWithTitle title="Professional Experience">
+      {jobs.reverse().map((job) => <JobCard title={job.title} company={job.company} fromTo={job.fromTo} type={job.type} description={job.description} />)}
+    </ContainerWithTitle>
   </main>
 </BaseLayout>
 
 <style>
-  .myWork {
-    transition: all 0.8s ease-out;
-  }
-
-  .projects {
+  .gridContainer {
     display: grid;
     grid-gap: 2rem;
+    padding-bottom: 50px;
   }
 
-  @media (min-width: 768px) {
-    .Projects {
-      grid-template-columns: repeat(2, 1fr);
+  .bioImage {
+    margin: 0 auto;
+  }
+
+  .job {
+    padding: 1rem;
+    border-bottom: #eece1a 5px solid;
+  }
+
+  @media screen and (min-width: 768px) {
+    .gridContainer {
+      grid-template-columns: 1fr 2fr;
+    }
+    .bio {
+      font-size: 120%;
     }
   }
 </style>

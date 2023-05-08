@@ -1,17 +1,13 @@
 ---
-import MenuIcon from './UI/MenuIcon/MenuIcon';
-import MenuBranding from '../components/Header/MenuBranding/MenuBranding';
-import SideNav from '../components/Header/SideNav/SideNav';
+import MenuIcon from './MenuIcon/MenuIcon';
+import Menu from './Menu/Menu';
 ---
 
 <header>
   <div class="navbar">
     <MenuIcon client:load />
   </div>
-  <nav class="menu">
-    <MenuBranding client:load />
-    <SideNav client:load />
-  </nav>
+  <Menu client:load />
 </header>
 
 <style>

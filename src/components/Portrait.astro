@@ -1,0 +1,20 @@
+<div class="portrait"></div>
+
+<style>
+  .portrait {
+    width: 250px;
+    aspect-ratio: 1 / 1;
+    background-image: url(../assets/images/profile.jpg);
+    background-size: cover;
+    border-radius: 20%;
+    border: 2px solid #eece1a;
+    z-index: 3;
+    transition: width 0.8s ease-out;
+  }
+
+  @media screen and (max-width: 768px) {
+    .portrait {
+      width: 150px;
+    }
+  }
+</style>

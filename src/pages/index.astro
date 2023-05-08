@@ -8,20 +8,28 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 <BaseLayout>
   <main class="landing-page">
-    <CustomHeading mainHeading="Ioannis" secondaryHeading="Amaxopoulos" caption="Web Developer, Programmer & Motorsport Enthusiast" />
+    <CustomHeading mainHeading="Ioannis" secondaryHeading="Amaxopoulos" caption="Web Developer, Motorsport Enthusiast & World Explorer" />
     <h3 class="welcome">Welcome to my portfolio site! Click on the menu icon in the top right to browse around.</h3>
     <div class="icons">
-      <a href="https://www.facebook.com/giannis.amaxopoulos.5" target="_blank" rel="noopener noreferrer">
-        <!-- <FontAwesomeIcon class="facebook" icon={['fab', 'facebook']} size="2x" /> -->
-        <i class="fa-brands fa-facebook fa-lg facebook"></i>
-      </a>
       <a href="https://www.linkedin.com/in/ioannis-amaxopoulos-30b05617b/" target="_blank" rel="noopener noreferrer">
         <!-- <FontAwesomeIcon class="linkedin" icon={['fab', 'linkedin']} size="2x" /> -->
-        <i class="fa-brands fa-linkedin fa-lg linkedin"></i>
+        <i class="fa-brands fa-linkedin fa-2xl linkedin"></i>
       </a>
       <a href="https://github.com/johndaamax" target="_blank" rel="noopener noreferrer">
         <!-- <FontAwesomeIcon class="github" icon={['fab', 'github']} size="2x" /> -->
-        <i class="fa-brands fa-github fa-lg github"></i>
+        <i class="fa-brands fa-github fa-2xl github"></i>
+      </a>
+      <a href="https://www.facebook.com/giannis.amaxopoulos.5" target="_blank" rel="noopener noreferrer">
+        <!-- <FontAwesomeIcon class="facebook" icon={['fab', 'facebook']} size="2x" /> -->
+        <i class="fa-brands fa-facebook fa-2xl facebook"></i>
+      </a>
+      <a href="https://www.instagram.com/johndaamax" target="_blank" rel="noopener noreferrer">
+        <!-- <FontAwesomeIcon class="github" icon={['fab', 'github']} size="2x" /> -->
+        <i class="fa-brands fa-instagram fa-2xl instagram"></i>
+      </a>
+      <a href="https://twitter.com/johndaamax" target="_blank" rel="noopener noreferrer">
+        <!-- <FontAwesomeIcon class="github" icon={['fab', 'github']} size="2x" /> -->
+        <i class="fa-brands fa-twitter fa-2xl twitter"></i>
       </a>
     </div>
   </main>
@@ -32,44 +40,49 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     overflow: hidden;
   }
 
-  h1,
-  h2,
-  h3 {
-    margin: 0;
-    font-weight: 400;
-    color: #fff;
-  }
-
   .welcome {
     min-width: 300px;
     border-radius: 5px;
     margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
-    background: rgba(73, 73, 73, 0.5);
+    padding: 0.2rem 0;
   }
 
   .icons {
+    display: flex;
+    gap: 1em 1.75em;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+    align-items: center;
     min-width: 250px;
   }
 
   .icons a {
     color: #fff;
     padding: 0;
-    margin-left: 30px;
     font-size: 1.3rem;
   }
 
   .facebook:hover {
+    transition: all 0.5s linear;
     color: #4267b2;
-    transition: all 0.7s linear;
   }
   .linkedin:hover {
     color: #0077b5;
-    transition: all 0.7s linear;
+    transition: all 0.5s linear;
   }
   .github:hover {
     color: rgb(78, 241, 56);
-    transition: all 0.7s linear;
+    transition: all 0.5s linear;
+  }
+
+  .instagram:hover {
+    color: #d6249f;
+    transition: color 0.5s linear;
+  }
+
+  .twitter:hover {
+    color: rgb(29, 155, 240);
+    transition: color 0.5s linear;
   }
 
   @media screen and (max-width: 450px) {

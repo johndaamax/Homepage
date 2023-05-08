@@ -1,14 +1,14 @@
 ---
 import '@fortawesome/fontawesome-free';
+import svg from '../assets/images/astro-logo-light.svg';
 ---
 
 <footer>
-  <p>
-    Powered by
-    <span>Astro &</span>
-    <i class="fa-brands fa-react fa-lg react"></i>
-    <span>React</span> © 2023
-  </p>
+  <div>
+    <span>Powered by</span>
+    <a href="https://astro.build"><img src={svg} alt="Astro" /></a>
+    <span>© 2023</span>
+  </div>
 </footer>
 
 <style>
@@ -19,9 +19,20 @@ import '@fortawesome/fontawesome-free';
     justify-content: center;
     align-items: center;
     width: 100%;
-    min-height: 60px;
+    min-height: 4rem;
     background-color: hsl(227deg 87% 3%);
     color: white;
+  }
+
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  img {
+    width: 5rem;
+    margin: 0 1em;
   }
 
   footer p {
@@ -30,15 +41,6 @@ import '@fortawesome/fontawesome-free';
 
   footer p span {
     font-size: 28px;
-  }
-
-  .icon {
-    margin-left: 10px;
-    color: rgb(50, 173, 245);
-  }
-
-  .react {
-    color: darkturquoise;
   }
 
   @media screen and (max-width: 450px) {
