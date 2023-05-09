@@ -1,4 +1,13 @@
-export const jobs = [
+export interface Job {
+  id: number;
+  title: string;
+  company: string;
+  fromTo: string;
+  type: string;
+  description: string;
+}
+
+export const jobs: Job[] = [
   {
     id: 1,
     title: 'Network/Systems Administator',

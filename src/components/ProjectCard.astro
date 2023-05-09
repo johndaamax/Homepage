@@ -1,15 +1,5 @@
 ---
-interface Project {
-  id: number;
-  title: string;
-  description: string;
-
-  image: string;
-  link: string;
-  isDeployed?: {
-    link: string;
-  };
-}
+import { Project } from '../data/projects';
 
 interface Props {
   project: Project;

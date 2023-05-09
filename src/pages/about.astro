@@ -21,7 +21,7 @@ import { jobs } from '../data/jobs';
       </ContainerWithTitle>
     </div>
     <ContainerWithTitle title="Professional Experience">
-      {jobs.reverse().map((job) => <JobCard title={job.title} company={job.company} fromTo={job.fromTo} type={job.type} description={job.description} />)}
+      {jobs.reverse().map((job) => <JobCard job={job}} />)}
     </ContainerWithTitle>
   </main>
 </BaseLayout>

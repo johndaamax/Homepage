@@ -1,22 +1,20 @@
 ---
+import { Job } from '../data/jobs';
+
 interface Props {
-  company: string;
-  fromTo: string;
-  title: string;
-  type: string;
-  description: string;
+  job: Job;
 }
 
-const { company, fromTo, title, type, description } = Astro.props;
+const { job } = Astro.props;
 ---
 
 <div class="card">
-  <h3><strong>{company}</strong></h3>
-  <span class="duration">{fromTo}</span>
-  <h4>{title}</h4>
-  <h5>{type}</h5>
+  <h3><strong>{job.company}</strong></h3>
+  <span class="duration">{job.fromTo}</span>
+  <h4>{job.title}</h4>
+  <h5>{job.type}</h5>
   <hr />
-  <p>{description}</p>
+  <p>{job.description}</p>
 </div>
 
 <style>
