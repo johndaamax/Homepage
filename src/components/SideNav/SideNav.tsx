@@ -14,7 +14,7 @@ export default function SideNav() {
   return (
     <ul className={attachedClasses.join(' ')}>
       <li className={navItemClasses.join(' ')}>
-        <a onClick={() => isMenuVisible.set(false)} href="/homepage" className={styles.NavLink}>
+        <a onClick={() => isMenuVisible.set(false)} href="/homepage/" className={styles.NavLink}>
           Home
         </a>
       </li>
